@@ -4,6 +4,7 @@ import(
   "fmt"
 
   "github.com/ASAP-BYAF/cos_similarity/calc_sim"
+  "github.com/ASAP-BYAF/cos_similarity/sort"
 )
 
 func main() {
@@ -11,5 +12,9 @@ func main() {
   s2 := []float64{0.4, 0.1, 0.6, 1.0, 1.0}
   sim := calc_sim.Calc(s1, s2)
 
-  fmt.Printf("sim = %g", sim)
+  fmt.Printf("sim = %g\n", sim)
+
+  s3 := []int{4, 1, 6, 1, 0}
+  sort.Sort(s3)
+  fmt.Printf("s3_sorted = %v\n", s3)
 }
