@@ -4,6 +4,7 @@ import(
   "fmt"
 
   "github.com/ASAP-BYAF/cos_similarity/calc_sim"
+  "github.com/ASAP-BYAF/cos_similarity/calc_sim/stdize_vec"
   "github.com/ASAP-BYAF/cos_similarity/sort"
 )
 
@@ -14,6 +15,10 @@ func main() {
 
   fmt.Printf("sim = %g\n", sim)
 
-  sort.Sort(s1)
+  sort.RevSort(s1)
   fmt.Printf("s1_sorted = %v\n", s1)
+
+  fmt.Printf("s1_before_stdize = %v\n", s1)
+  stdize_vec.Stdize(s1)
+  fmt.Printf("s1_after_stdize = %v\n", s1)
 }
