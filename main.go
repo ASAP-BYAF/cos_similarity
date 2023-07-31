@@ -14,7 +14,6 @@ func main() {
 
   fmt.Printf("sim = %g\n", sim)
 
-  s3 := []int{4, 1, 6, 1, 0}
-  sort.Sort(s3)
-  fmt.Printf("s3_sorted = %v\n", s3)
+  sort.Sort(s1)
+  fmt.Printf("s1_sorted = %v\n", s1)
 }
